@@ -1,9 +1,16 @@
 // TODO
 var GroceryList = (props) => (
-<ul>
-  <li>{props.item1}</li>
-  <li>{props.item2}</li>
-</ul>
+<div>
+    <h3>GroceryList: </h3>
+    <ul> 
+        <Items item={props.item1}/>
+        <Items item={props.item2}/>
+    </ul>
+</div>
+);
+
+var Items = (props) => (
+    <li>{props.item}</li>
 );
 
 var list = {};
