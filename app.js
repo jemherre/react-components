@@ -1,10 +1,26 @@
 // TODO
-var GroceryList = (props) => (
-<div>
-    <h3>GroceryList: </h3>
-    <GroceryListItem items={['Butter','Milk','Cheese','Eggs']}/>
-</div>
-);
+//stateless function
+// var GroceryList = (props) => (
+// <div>
+//     <h3>GroceryList: </h3>
+//     <GroceryListItem items={['Butter','Milk','Cheese','Eggs']}/>
+// </div>
+// );
+
+class GroceryList extends React.Component {
+    constructor(props){
+        super(props);
+    }
+
+    render() {
+        return(
+            <div>
+                <h3>GroceryList: </h3>
+                <GroceryListItem items={['Bread','Milk','Cheese','Eggs']}/>
+            </div>
+        );
+    }
+}
 
 var GroceryListItem = (props) => (
     <ul> 
